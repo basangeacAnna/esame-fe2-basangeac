@@ -269,3 +269,85 @@ a.card__cta:hover {
   color: #555;
   background: #fafafa;
 }
+
+:root {
+  --viola: #7c3aed;
+  --viola-scuro: #5b21b6;
+  --viola-chiaro: #ede9fe;
+}
+
+.poster--image {
+  padding: 0;
+  overflow: hidden;
+}
+
+.poster--image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.shell {
+  border-color: var(--viola-scuro);
+}
+
+.header {
+  background: linear-gradient(135deg, var(--viola-scuro), var(--viola));
+  border-bottom-color: var(--viola-scuro);
+}
+
+.header__brand {
+  color: #fff;
+}
+
+.header__nav a {
+  border-color: #fff;
+  color: var(--viola-scuro);
+  font-weight: bold;
+}
+
+.page-title,
+.detail__title {
+  color: var(--viola-scuro);
+}
+
+.card {
+  border-color: var(--viola-scuro);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 0 var(--viola);
+}
+
+.card__poster {
+  border-bottom-color: var(--viola-scuro);
+}
+
+.card__cta,
+.back-link {
+  background: var(--viola);
+  border-color: var(--viola-scuro);
+  color: #fff;
+}
+
+a.card__cta:hover,
+.back-link:hover {
+  background: var(--viola-scuro);
+}
+
+.detail__meta li {
+  background: var(--viola-chiaro);
+  border-color: var(--viola);
+}
+
+.genre {
+  border-color: var(--viola);
+  color: var(--viola-scuro);
+}
+
+.detail__poster {
+  border-color: var(--viola-scuro);
+}
